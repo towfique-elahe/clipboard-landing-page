@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Bai Jamjuree;
+}
+
+/* attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(228, 45%, 44%);
+}
+/* attribution */
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 30px;
+}
+.container,
+footer {
+  width: 100%;
+  max-width: 1440px;
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+#bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* top */
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 500px;
+  text-align: center;
+  padding: 100px 0;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.top h1 {
+  padding-top: 20px;
+  font-size: 32px;
+}
+.top p {
+  padding-bottom: 20px;
+}
+.buttons a:nth-child(1) {
+  text-decoration: none;
+  color: white;
+  background-color: #22bda6;
+  padding: 8px 20px;
+  border-radius: 30px;
+}
+.buttons a:nth-child(2) {
+  text-decoration: none;
+  color: white;
+  background-color: #6174ff;
+  padding: 8px 20px;
+  border-radius: 30px;
+}
+p {
+  color: rgba(70, 68, 68, 0.433);
+}
+h1,
+h2 {
+  color: rgba(0, 0, 0, 0.515);
+}
+.snippets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 500px;
+  text-align: center;
+}
+/* top */
+
+/* mac */
+.mac {
+  width: 100%;
+  display: flex;
+  gap: 100px;
+  padding: 100px 0;
+}
+.mac-text {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  max-width: 300px;
+}
+/* mac */
+
+/* access */
+.access {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  max-width: 500px;
+}
+#devices {
+  margin: 100px 0;
+}
+/* access */
+
+/* workflow */
+.workflow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 100px;
+}
+.workflow-top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.workflow-bottom {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.box img,
+.box h2,
+.box p {
+  padding: 10px;
+}
+/* workflow */
+
+/* clients */
+.clients {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* clients */
+
+/* clipboard */
+.clipboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 500px;
+  text-align: center;
+  padding-bottom: 100px;
+}
+/* clipboard */
+
+/* footer */
+footer {
+  background-color: #f5f6f8;
+  display: grid;
+  grid-template-areas:
+    "footer-left footer-right"
+    "attribution attribution";
+  justify-content: space-between;
+  padding: 20px 150px;
+}
+.footer-left {
+  display: flex;
+  grid-area: footer-left;
+  gap: 100px;
+}
+.footer-left img {
+  width: 50px;
+  height: 50px;
+}
+.footer-right {
+  grid-area: footer-right;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+footer p {
+  padding-bottom: 5px;
+}
+.attribution {
+  grid-area: attribution;
+  padding-top: 20px;
+}
+/* footer */
+
+/* responsive */
+@media only screen and (max-width: 1110px) {
+  .mac img {
+    width: 500px;
+    height: max-content;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  footer {
+    grid-template-areas: "footer-left" "footer-right" "attribution";
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer-right {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .mac img {
+    width: 350px;
+    height: max-content;
+  }
+  #devices {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .mac {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-left {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .buttons {
+    flex-direction: column;
+  }
+/* responsive */
